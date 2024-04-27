@@ -1,0 +1,931 @@
+{
+  "compatibilityLevel": 1550,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"Data Professional Survey\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.128.1177.0 (24.04)"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Entities": {
+              "data_professional_survey.q1__which_title_best_fits_your_current_role_1": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Data Professional Survey",
+                    "ConceptualProperty": "Q1 - Which Title Best Fits your Current Role?.1"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Job Title": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "data_professional_survey.q5__favorite_programming_language_1": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Data Professional Survey",
+                    "ConceptualProperty": "Q5 - Favorite Programming Language.1"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Favorite Programming Language": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "data_professional_survey.q7__how_difficult_was_it_for_you_to_break_into_data": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Data Professional Survey",
+                    "ConceptualProperty": "Q7 - How difficult was it for you to break into Data?"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Difficulty": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              }
+            },
+            "Language": "en-US",
+            "Version": "2.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "2747334b-7b21-48d6-af01-d2b5f1ff91eb",
+        "fromColumn": "Date Taken (America/New_York)",
+        "fromTable": "Data Professional Survey",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_290f5a18-4ffa-4c31-8d41-5a9e6a1d4999"
+      }
+    ],
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "Data Professional Survey",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Unique ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "61c274a2-40e6-484f-aadc-40db077cf48e",
+            "sourceColumn": "Unique ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Email",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9e4f8c56-8d57-4a9d-afa9-3eade1e52ceb",
+            "sourceColumn": "Email",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Date Taken (America/New_York)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "39877639-6518-438a-9c1c-96266cb12a65",
+            "sourceColumn": "Date Taken (America/New_York)",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_290f5a18-4ffa-4c31-8d41-5a9e6a1d4999"
+                },
+                "isDefault": true,
+                "relationship": "2747334b-7b21-48d6-af01-d2b5f1ff91eb"
+              }
+            ]
+          },
+          {
+            "name": "Time Taken (America/New_York)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Time"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Time",
+            "lineageTag": "f598ebe8-4d50-4978-986c-0efc8125cffb",
+            "sourceColumn": "Time Taken (America/New_York)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Time Spent",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Time"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Time",
+            "lineageTag": "ecdd4ca3-309f-4f10-a1e0-ee857e98f61f",
+            "sourceColumn": "Time Spent",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Q1 - Which Title Best Fits your Current Role?.1",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e8fc237b-865c-428a-a55d-a772211ed1ec",
+            "sourceColumn": "Q1 - Which Title Best Fits your Current Role?.1",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Q2 - Did you switch careers into Data?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9588c14d-9564-4185-b534-71311cf280d7",
+            "sourceColumn": "Q2 - Did you switch careers into Data?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Q3 - Current Yearly Salary (in USD)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "715699fb-90dc-4f8f-91b6-c6d5b3053524",
+            "sourceColumn": "Q3 - Current Yearly Salary (in USD)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Average Salary",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "35180bd1-1226-435f-8bb6-1ea295e6797b",
+            "sourceColumn": "Average Salary",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Q4 - What Industry do you work in?.1",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c0a9986a-db00-4291-9df1-3321d15ca4bd",
+            "sourceColumn": "Q4 - What Industry do you work in?.1",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Q5 - Favorite Programming Language.1",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3f81e0b4-a33c-4e59-9d5c-6e47845e7768",
+            "sourceColumn": "Q5 - Favorite Programming Language.1",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Q6 - How Happy are you in your Current Position with the following? (Salary)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "cbbcb53d-18ea-4079-9f94-6c443c1e299b",
+            "sourceColumn": "Q6 - How Happy are you in your Current Position with the following? (Salary)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Q6 - How Happy are you in your Current Position with the following? (Work/Life Balance)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d572d676-d4ee-4882-b50a-64db428ca565",
+            "sourceColumn": "Q6 - How Happy are you in your Current Position with the following? (Work/Life Balance)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Q6 - How Happy are you in your Current Position with the following? (Coworkers)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "351bf476-48ad-41f9-9fab-ef786ddc5412",
+            "sourceColumn": "Q6 - How Happy are you in your Current Position with the following? (Coworkers)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Q6 - How Happy are you in your Current Position with the following? (Management)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e22ac64b-dd4a-4a39-b0e6-265c48c50179",
+            "sourceColumn": "Q6 - How Happy are you in your Current Position with the following? (Management)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Q6 - How Happy are you in your Current Position with the following? (Upward Mobility)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "37c713dc-a949-4fda-b1df-05e358564877",
+            "sourceColumn": "Q6 - How Happy are you in your Current Position with the following? (Upward Mobility)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Q6 - How Happy are you in your Current Position with the following? (Learning New Things)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "5ba6284d-970e-4228-80e4-94e34b0fc874",
+            "sourceColumn": "Q6 - How Happy are you in your Current Position with the following? (Learning New Things)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Q7 - How difficult was it for you to break into Data?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "fcc1847e-3cb6-48c2-b28a-28d4a5e08e3c",
+            "sourceColumn": "Q7 - How difficult was it for you to break into Data?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Q8 - If you were to look for a new job today, what would be the most important thing to you?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "79f5fecb-bbdc-4001-82b7-3c6412b1ebf1",
+            "sourceColumn": "Q8 - If you were to look for a new job today, what would be the most important thing to you?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Q9 - Male/Female?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "965594e1-5090-49b7-9c34-322e8143d2e5",
+            "sourceColumn": "Q9 - Male/Female?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Q10 - Current Age",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8592d688-91dd-4fb7-8c57-8ee2a90ebb3f",
+            "sourceColumn": "Q10 - Current Age",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Q11 - Which Country do you live in?.1",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "af959643-5530-44ad-a321-50e89ec7124a",
+            "sourceColumn": "Q11 - Which Country do you live in?.1",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Q12 - Highest Level of Education",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6c55bbae-4270-4165-b54d-80a0922eb3c2",
+            "sourceColumn": "Q12 - Highest Level of Education",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Q13 - Ethnicity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9a3b1cac-2868-42d6-99ad-231b4219267d",
+            "sourceColumn": "Q13 - Ethnicity",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "a0516429-98fe-41c8-a566-77df929961ed",
+        "partitions": [
+          {
+            "name": "Data Professional Survey",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\hehe\\Desktop\\Power BI - Final Project.xlsx\"), null, true),",
+                "    #\"Data Professional Survey_Sheet\" = Source{[Item=\"Data Professional Survey\",Kind=\"Sheet\"]}[Data],",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(#\"Data Professional Survey_Sheet\", [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Unique ID\", type text}, {\"Email\", type text}, {\"Date Taken (America/New_York)\", type date}, {\"Time Taken (America/New_York)\", type time}, {\"Browser\", type text}, {\"OS\", type text}, {\"City\", type text}, {\"Country\", type text}, {\"Referrer\", type text}, {\"Time Spent\", type time}, {\"Q1 - Which Title Best Fits your Current Role?\", type text}, {\"Q2 - Did you switch careers into Data?\", type text}, {\"Q3 - Current Yearly Salary (in USD)\", type text}, {\"Q4 - What Industry do you work in?\", type text}, {\"Q5 - Favorite Programming Language\", type text}, {\"Q6 - How Happy are you in your Current Position with the following? (Salary)\", Int64.Type}, {\"Q6 - How Happy are you in your Current Position with the following? (Work/Life Balance)\", Int64.Type}, {\"Q6 - How Happy are you in your Current Position with the following? (Coworkers)\", Int64.Type}, {\"Q6 - How Happy are you in your Current Position with the following? (Management)\", Int64.Type}, {\"Q6 - How Happy are you in your Current Position with the following? (Upward Mobility)\", Int64.Type}, {\"Q6 - How Happy are you in your Current Position with the following? (Learning New Things)\", Int64.Type}, {\"Q7 - How difficult was it for you to break into Data?\", type text}, {\"Q8 - If you were to look for a new job today, what would be the most important thing to you?\", type text}, {\"Q9 - Male/Female?\", type text}, {\"Q10 - Current Age\", Int64.Type}, {\"Q11 - Which Country do you live in?\", type text}, {\"Q12 - Highest Level of Education\", type text}, {\"Q13 - Ethnicity\", type text}}),",
+                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed Type\",{\"Browser\", \"OS\", \"City\", \"Country\", \"Referrer\"}),",
+                "    #\"Split Column by Delimiter\" = Table.SplitColumn(#\"Removed Columns\", \"Q1 - Which Title Best Fits your Current Role?\", Splitter.SplitTextByEachDelimiter({\"(\"}, QuoteStyle.Csv, false), {\"Q1 - Which Title Best Fits your Current Role?.1\", \"Q1 - Which Title Best Fits your Current Role?.2\"}),",
+                "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Split Column by Delimiter\",{{\"Q1 - Which Title Best Fits your Current Role?.1\", type text}, {\"Q1 - Which Title Best Fits your Current Role?.2\", type text}}),",
+                "    #\"Removed Columns1\" = Table.RemoveColumns(#\"Changed Type1\",{\"Q1 - Which Title Best Fits your Current Role?.2\"}),",
+                "    #\"Split Column by Delimiter1\" = Table.SplitColumn(#\"Removed Columns1\", \"Q4 - What Industry do you work in?\", Splitter.SplitTextByEachDelimiter({\"(\"}, QuoteStyle.Csv, false), {\"Q4 - What Industry do you work in?.1\", \"Q4 - What Industry do you work in?.2\"}),",
+                "    #\"Changed Type2\" = Table.TransformColumnTypes(#\"Split Column by Delimiter1\",{{\"Q4 - What Industry do you work in?.1\", type text}, {\"Q4 - What Industry do you work in?.2\", type text}}),",
+                "    #\"Removed Columns2\" = Table.RemoveColumns(#\"Changed Type2\",{\"Q4 - What Industry do you work in?.2\"}),",
+                "    #\"Split Column by Delimiter2\" = Table.SplitColumn(#\"Removed Columns2\", \"Q5 - Favorite Programming Language\", Splitter.SplitTextByEachDelimiter({\":\"}, QuoteStyle.Csv, false), {\"Q5 - Favorite Programming Language.1\", \"Q5 - Favorite Programming Language.2\"}),",
+                "    #\"Changed Type3\" = Table.TransformColumnTypes(#\"Split Column by Delimiter2\",{{\"Q5 - Favorite Programming Language.1\", type text}, {\"Q5 - Favorite Programming Language.2\", type text}}),",
+                "    #\"Removed Columns3\" = Table.RemoveColumns(#\"Changed Type3\",{\"Q5 - Favorite Programming Language.2\"}),",
+                "    #\"Duplicated Column\" = Table.DuplicateColumn(#\"Removed Columns3\", \"Q3 - Current Yearly Salary (in USD)\", \"Q3 - Current Yearly Salary (in USD) - Copy\"),",
+                "    #\"Split Column by Character Transition\" = Table.SplitColumn(#\"Duplicated Column\", \"Q3 - Current Yearly Salary (in USD) - Copy\", Splitter.SplitTextByCharacterTransition({\"0\"..\"9\"}, (c) => not List.Contains({\"0\"..\"9\"}, c)), {\"Q3 - Current Yearly Salary (in USD) - Copy.1\", \"Q3 - Current Yearly Salary (in USD) - Copy.2\", \"Q3 - Current Yearly Salary (in USD) - Copy.3\"}),",
+                "    #\"Removed Columns4\" = Table.RemoveColumns(#\"Split Column by Character Transition\",{\"Q3 - Current Yearly Salary (in USD) - Copy.3\"}),",
+                "    #\"Replaced Value\" = Table.ReplaceValue(#\"Removed Columns4\",\"k\",\"\",Replacer.ReplaceText,{\"Q3 - Current Yearly Salary (in USD) - Copy.2\"}),",
+                "    #\"Replaced Value1\" = Table.ReplaceValue(#\"Replaced Value\",\"-\",\"\",Replacer.ReplaceText,{\"Q3 - Current Yearly Salary (in USD) - Copy.2\"}),",
+                "    #\"Filtered Rows\" = Table.SelectRows(#\"Replaced Value1\", each true),",
+                "    #\"Replaced Value2\" = Table.ReplaceValue(#\"Filtered Rows\",\"+\",\"225\",Replacer.ReplaceText,{\"Q3 - Current Yearly Salary (in USD) - Copy.2\"}),",
+                "    #\"Changed Type4\" = Table.TransformColumnTypes(#\"Replaced Value2\",{{\"Q3 - Current Yearly Salary (in USD) - Copy.2\", Int64.Type}, {\"Q3 - Current Yearly Salary (in USD) - Copy.1\", Int64.Type}}),",
+                "    #\"Added Custom\" = Table.AddColumn(#\"Changed Type4\", \"Average Yearly Salary\", each ([#\"Q3 - Current Yearly Salary (in USD) - Copy.1\"] + [#\"Q3 - Current Yearly Salary (in USD) - Copy.2\"]) / 2),",
+                "    #\"Reordered Columns\" = Table.ReorderColumns(#\"Added Custom\",{\"Unique ID\", \"Email\", \"Date Taken (America/New_York)\", \"Time Taken (America/New_York)\", \"Time Spent\", \"Q1 - Which Title Best Fits your Current Role?.1\", \"Q2 - Did you switch careers into Data?\", \"Q3 - Current Yearly Salary (in USD)\", \"Average Yearly Salary\", \"Q4 - What Industry do you work in?.1\", \"Q5 - Favorite Programming Language.1\", \"Q6 - How Happy are you in your Current Position with the following? (Salary)\", \"Q6 - How Happy are you in your Current Position with the following? (Work/Life Balance)\", \"Q6 - How Happy are you in your Current Position with the following? (Coworkers)\", \"Q6 - How Happy are you in your Current Position with the following? (Management)\", \"Q6 - How Happy are you in your Current Position with the following? (Upward Mobility)\", \"Q6 - How Happy are you in your Current Position with the following? (Learning New Things)\", \"Q7 - How difficult was it for you to break into Data?\", \"Q8 - If you were to look for a new job today, what would be the most important thing to you?\", \"Q9 - Male/Female?\", \"Q10 - Current Age\", \"Q11 - Which Country do you live in?\", \"Q12 - Highest Level of Education\", \"Q13 - Ethnicity\", \"Q3 - Current Yearly Salary (in USD) - Copy.1\", \"Q3 - Current Yearly Salary (in USD) - Copy.2\"}),",
+                "    #\"Removed Columns5\" = Table.RemoveColumns(#\"Reordered Columns\",{\"Q3 - Current Yearly Salary (in USD) - Copy.2\", \"Q3 - Current Yearly Salary (in USD) - Copy.1\"}),",
+                "    #\"Split Column by Delimiter3\" = Table.SplitColumn(#\"Removed Columns5\", \"Q11 - Which Country do you live in?\", Splitter.SplitTextByEachDelimiter({\"(\"}, QuoteStyle.Csv, false), {\"Q11 - Which Country do you live in?.1\", \"Q11 - Which Country do you live in?.2\"}),",
+                "    #\"Changed Type5\" = Table.TransformColumnTypes(#\"Split Column by Delimiter3\",{{\"Q11 - Which Country do you live in?.1\", type text}, {\"Q11 - Which Country do you live in?.2\", type text}}),",
+                "    #\"Removed Columns6\" = Table.RemoveColumns(#\"Changed Type5\",{\"Q11 - Which Country do you live in?.2\"}),",
+                "    #\"Changed Type6\" = Table.TransformColumnTypes(#\"Removed Columns6\",{{\"Average Yearly Salary\", Int64.Type}}),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Changed Type6\",{{\"Average Yearly Salary\", \"Average Salary\"}})",
+                "in",
+                "    #\"Renamed Columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DateTableTemplate_2f50766d-70a2-40a4-a4b8-dd55f74b98a3",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "d660c903-0e59-44a7-9866-b0058ddcc13a",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "97c4d4c2-191d-4503-98cf-a0b42e2416ef",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "5fe128af-2f01-434a-bceb-7812bd7e5363",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "d9e01041-6ea4-435d-8851-a3b32de1593c",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "e99f011a-a2e9-4d5d-8d13-cf58bdc7a071",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "68621812-71a0-47a5-9553-c5a78389356b",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "af6bdd16-2f8d-4942-ada5-7aebba7acd9f",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "5b56be3a-2b11-4fbb-a1a4-6ee01b003a8a",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "1d126b2c-9649-4c7d-88d0-b129528f1105",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "2894a328-e1a3-4de8-8f6e-aeec7902e247",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "dac9f44a-516a-43eb-8318-df001acaa531",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "92e544ed-5039-4aa0-ba04-78f3576a759e"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "f727d2cb-7330-481e-91ff-5fa7b5fd9ec5",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_2f50766d-70a2-40a4-a4b8-dd55f74b98a3",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_290f5a18-4ffa-4c31-8d41-5a9e6a1d4999",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "c65bde5c-32fd-48a1-bea7-c11155b42d9b",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "1e194ee1-0186-4e97-a3c4-02d93e5ab538",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "381d43de-a995-4525-a4a4-600b0f21926a",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "ee8f14b2-3d30-4019-8375-5a7e8de1bdcc",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "bcd68ade-1cef-4064-bff9-39536d60585c",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "8340a368-92ba-43a9-b39d-33b053f3ccad",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "2c6e5caa-61c1-4406-b019-41485a163e6c",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "c65548a2-1da2-49df-b3a8-204bbe8a2874",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "a1dda341-1614-4d0c-b94a-aac741c582c9",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "7a9f4fb8-a978-4993-af79-20474a049c68",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "b18af8fc-fc08-4e20-bf50-dd6c1ab460d0",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "3b390f72-d7f6-4fe7-9a5d-c3693aeb913e"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "e8d8ac54-3572-48b9-be8c-54677489d4ae",
+        "partitions": [
+          {
+            "name": "LocalDateTable_290f5a18-4ffa-4c31-8d41-5a9e6a1d4999",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('Data Professional Survey'[Date Taken (America/New_York)])), 1, 1), Date(Year(MAX('Data Professional Survey'[Date Taken (America/New_York)])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      }
+    ]
+  }
+}
